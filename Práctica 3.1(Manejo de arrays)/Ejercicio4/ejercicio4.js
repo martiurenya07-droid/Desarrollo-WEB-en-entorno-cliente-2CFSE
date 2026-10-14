@@ -1,14 +1,14 @@
 //bucle de 50 vueltas que representa cada linea de loteria
 for (let index = 0; index < 50; index++) {
     let set = new Set();
-    while (set.size!=6) {
+    while (set.size!==6) {
         //sacamos número aleatorio
         const numero = Math.floor(Math.random() * 49) + 1;
         
         //añadimos al set
         set.add(numero);
     }
-    
+
     //pasamos el set a array para que tenga indices
     let array = Array.from(set);
     
