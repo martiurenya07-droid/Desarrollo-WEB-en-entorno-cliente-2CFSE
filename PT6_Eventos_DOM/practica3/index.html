@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 3 - Arrastrar y soltar</title>
+    <style>
+        .capa {
+            box-sizing: border-box;
+            border: 1px solid black;
+            padding: 1em;
+            position: fixed;
+            top: 70px;
+            width: 200px;
+            height: 100px;
+        }
+        #capa1 { left: 50px; background-color: yellow; cursor: grab; }
+        #capa2 { left: 400px; background-color: white; }
+        a { position: fixed; top: 15px; left: 15px; }
+    </style>
+</head>
+<body>
+    <a href="../index.html">Volver al inicio</a>
+    <div id="capa1" class="capa" draggable="true">Soy arrastrable</div>
+    <div id="capa2" class="capa">Soy el destino</div>
+    <script src="script.js"></script>
+</body>
+</html>

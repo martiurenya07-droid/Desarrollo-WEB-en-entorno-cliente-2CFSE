@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - Formulario</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 30px; }
+        .campo { margin-bottom: 16px; }
+        label { display: block; margin-bottom: 5px; }
+        .error { color: red; margin: 5px 0; }
+        button:disabled { background-color: #cccccc; color: #777777; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <h1>Práctica 2: Validación de formulario</h1>
+    <form id="formulario" novalidate>
+        <div class="campo">
+            <label for="email">Email:</label>
+            <input type="text" id="email" autocomplete="email">
+            <p class="error" id="errorEmail"></p>
+        </div>
+        <div class="campo">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" autocomplete="current-password">
+            <p class="error" id="errorPassword"></p>
+        </div>
+        <button type="submit" id="enviar" disabled>Enviar</button>
+    </form>
+    <p id="resultado"></p>
+    <p><a href="../index.html">Volver al inicio</a></p>
+    <script src="script.js"></script>
+</body>
+</html>
